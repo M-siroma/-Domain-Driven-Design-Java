@@ -1,20 +1,17 @@
-package aula02;
+package entrada_dados_AULA04;
+
+
 
 public class Pessoa {
+		String nome;
+		int idade;
+		float altura;
+		float peso;
+		
+		
+		public void imprimir () {
+			System.out.println("seu nome eh" + nome + "sua idade eh" + idade + "seu peso eh" + peso + "sua altura eh" + altura );
+	}
 	
-	String nome;
-	int idade;
-	float altura;
-	String nacionalidade;
-	float peso;
-	
-	public void andar() {
-		System.out.println(nome + " andando....");
-	}
-	public void espirrar() {
-		System.out.println(nome + " espirrando.....");
-	}
-	public void comer() {
-		System.out.println(nome + " comendo..... o LUIz");
-	}
+
 }

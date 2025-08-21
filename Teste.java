@@ -1,22 +1,28 @@
-package aula02;
+package entrada_dados_AULA04;
+
+import java.util.Scanner;
 
 public class Teste {
-
 	public static void main(String[] args) {
 		
-		Pessoa matheus = new Pessoa();
-		matheus.nome = "Matheus";
-		matheus.altura = 1.80f;
-		matheus.comer();
-		matheus.andar();
-		matheus.espirrar();
 		
-		Pessoa luiz = new Pessoa();
-		luiz.nome = "Luiz";
-		luiz.altura = 1.70f;
-		luiz.comer();
-		luiz.andar();
-		luiz.espirrar();
+		
+		Scanner entrada = new Scanner(System.in);
+		Pessoa pessoa= new Pessoa();
+		
+		System.out.println("Diite o seu nome:");
+		pessoa.nome = entrada.next();
+		System.out.println("digite sua idade");
+		pessoa.idade = entrada.nextInt();
+		System.out.println("Diite sua altura:");
+		pessoa.altura = entrada.nextFloat();
+		System.out.println("digite seu peso:");
+		pessoa.peso = entrada.nextFloat();
+				
+		pessoa.imprimir();
+		
+		entrada.close();
+		
 	}
 
 }
